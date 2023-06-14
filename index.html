@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar menu</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+     <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <p class="course-title">sidebar menu</p>
+    <span class="menu"></span>
+    <div class="title">
+        <h1>روی دکمه بالا سمت چپ کلیک کنید</h1>
+    </div>
+    <div class="overlay">
+        <ul>
+            <li><a href="#">خانه</a></li>
+            <li><a href="#">دوره های آموزشی</a></li>
+            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#">درباره ما</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous">
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('.menu').click(function(){
+        $('.overlay').toggleClass('anim')
+        });
+    });
+</script>
+
+
+</body>
+</html>
